@@ -1,0 +1,123 @@
+.container {
+    display: flex; /* Define o layout como flexível */
+    flex-direction: column; /* Alinha os itens em uma coluna */
+    height: 100vh; /* Define a altura do contêiner como 100% da altura da janela */
+    background-image: url("../images/wall.png"); /* Define uma imagem de fundo */
+    align-items: center; /* Alinha os itens horizontalmente ao centro */
+    justify-content: flex-start; /* Alinhar ao topo */
+}
+
+.menu {
+    position: fixed; /* Fixar o menu no topo da página */
+    top: 0; /* Alinha o menu ao topo */
+    left: 0; /* Alinha o menu à esquerda */
+    width: 100%; /* Define a largura do menu como 100% */
+    display: flex; /* Define o layout do menu como flexível */
+    justify-content: space-evenly; /* Distribui os itens com espaços iguais entre eles */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    height: 90px; /* Define a altura do menu */
+    background-color: #000000; /* Define a cor de fundo como preto */
+    color: #fff; /* Define a cor do texto como branco */
+    border-bottom: 5px solid #ffd700; /* Adiciona uma borda inferior dourada */
+    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+}
+
+.main-content {
+    display: flex; /* Define o layout do conteúdo principal como flexível */
+    margin-top: 150px; /* Adiciona espaço acima do conteúdo, para não ficar atrás do menu */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: flex-start; /* Alinha os itens no início (parte superior) */
+}
+
+.panel {
+    display: flex; /* Define o layout do painel como flexível */
+    flex-direction: column; /* Alinha os itens do painel em uma coluna */
+    align-items: center; /* Alinha os itens horizontalmente ao centro */
+    justify-content: center; /* Centraliza os itens verticalmente */
+}
+
+.panel-row {
+    display: flex; /* Define o layout da linha do painel como flexível */
+}
+
+.square {
+    height: 150px; /* Define a altura do quadrado */
+    width: 150px; /* Define a largura do quadrado */
+    border: 1px solid black; /* Adiciona uma borda preta ao quadrado */
+    background-color: #00ff88; /* Define a cor de fundo do quadrado como verde */
+}
+
+.enemy {
+    background-image: url("../images/ralph.png"); /* Define uma imagem de fundo para o inimigo */
+    background-size: cover; /* Ajusta a imagem de fundo para cobrir o elemento */
+}
+
+.menu-lives {
+    display: flex; /* Define o layout do menu de vidas como flexível */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.menu-time h2:nth-child(2), /* Seleciona o segundo <h2> dentro do menu de tempo */
+.menu-score h2:nth-child(2) { /* Seleciona o segundo <h2> dentro do menu de pontuação */
+    margin-top: 1rem; /* Adiciona uma margem superior de 1 rem */
+}
+
+/* Estilos para o ranking */
+.ranking {
+    margin-right: 20px; /* Adiciona uma margem à direita do ranking */
+    text-align: center; /* Centraliza o texto no ranking */
+    color: #ffd700; /* Define a cor do texto como dourado */
+    background-color: #00000083; /* Define um fundo semi-transparente */
+    padding: 20px; /* Adiciona um preenchimento de 20px ao ranking */
+    border-radius: 10px; /* Arredonda os cantos do ranking */
+    border: 2px solid #000000; /* Adiciona uma borda preta ao ranking */
+}
+
+#high-scores {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 2px; /* Adiciona um preenchimento de 2px */
+    margin: 2PX; /* Adiciona uma margem de 2px */
+    border-radius: 10PX; /* Arredonda os cantos da lista de pontuações */
+    background-color: #ffffffc2; /* Define um fundo semi-transparente branco */
+}
+
+#high-scores li {
+    font-family: 'Press Start 2P', cursive; /* Define a fonte dos itens da lista */
+    font-size: 14px; /* Define o tamanho da fonte dos itens da lista */
+    color: #000000; /* Define a cor do texto como preto */
+    margin: 15px; /* Adiciona uma margem de 15px aos itens da lista */
+}
+
+.difficulty-selection {
+    margin-top: 20px; /* Adiciona uma margem superior de 20px */
+    color: white; /* Define a cor do texto como branco */
+    text-align: center; /* Centraliza o texto */
+}
+
+.difficulty-selection label {
+    font-family: 'Press Start 2P', cursive; /* Define a fonte do rótulo */
+    color: #ffd700; /* Define a cor do texto como dourado */
+    margin: 2px; /* Adiciona uma margem de 2px ao rótulo */
+}
+
+.difficulty-selection select {
+    font-family: 'Press Start 2P', cursive; /* Define a fonte do seletor */
+    background-color: #00ff88; /* Define a cor de fundo do seletor como verde */
+    color: #000000; /* Define a cor do texto como preto */
+    border: 2px solid #000000; /* Adiciona uma borda preta ao seletor */
+    padding: 5px; /* Adiciona um preenchimento de 5px ao seletor */
+    border-radius: 5px; /* Arredonda os cantos do seletor */
+}
+
+.buttons {
+    margin-top: 20px; /* Adiciona uma margem superior de 20px */
+    padding: 10px 20px; /* Adiciona preenchimento de 10px em cima e embaixo, e 20px nas laterais */
+    font-family: 'Press Start 2P', cursive; /* Define a fonte dos botões */
+    font-size: 16px; /* Define o tamanho da fonte dos botões */
+    background-color: #00ff88; /* Define a cor de fundo dos botões como verde */
+    border: 1px solid #000000; /* Adiciona uma borda preta aos botões */
+    border-radius: 5px; /* Arredonda os cantos dos botões */
+    cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+    width: 80%; /* Define a largura dos botões como 80% do contêiner pai */
+}

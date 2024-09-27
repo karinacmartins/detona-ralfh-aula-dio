@@ -1,0 +1,7 @@
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Define que o tamanho dos elementos incluirá bordas e preenchimentos */
+    font-family: "Press Start 2P", system-ui; /* Define a fonte padrão como 'Press Start 2P', com fallback para system-ui */
+}
+

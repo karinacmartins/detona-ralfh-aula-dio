@@ -1,0 +1,102 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento, especificando que este é um documento HTML5 -->
+<html lang="en"> <!-- Início do documento HTML, definindo o idioma como inglês -->
+
+<head>
+    <!-- Configurações do documento -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define a largura da viewport para responsividade -->
+
+    <!-- Links para fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Estabelece uma conexão antecipada com o domínio das fontes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Conexão com o domínio para carregar fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Importa a fonte 'Press Start 2P' -->
+
+    <!-- Estilos do documento -->
+    <link rel="stylesheet" href="assets/css/reset.css"> <!-- Link para o arquivo CSS que reseta estilos padrões -->
+    <link rel="stylesheet" href="assets/css/style.css"> <!-- Link para o arquivo CSS principal do estilo -->
+    <link rel="icon" href="assets/images/favicon.jpg"> <!-- Define o ícone da aba do navegador -->
+
+    <title>Detona Ralfh</title> <!-- Título da página que aparece na aba do navegador -->
+</head>
+
+<body>
+
+    <div class="container"> <!-- Contêiner principal da aplicação -->
+
+        <div class="menu"> <!-- Menu fixo na parte superior da página -->
+
+            <div class="menu-time"> <!-- Seção que mostra o tempo restante -->
+                <h2 style="color: red;">Time Left</h2> <!-- Título para o tempo restante -->
+                <h2 id="time-left">30</h2> <!-- Exibe o tempo restante -->
+            </div>
+
+            <div class="menu-score"> <!-- Seção que mostra a pontuação do jogador -->
+                <h2 style="color: red;">Your Score</h2> <!-- Título para a pontuação -->
+                <h2 id="score">0</h2> <!-- Exibe a pontuação atual -->
+            </div>
+
+            <div class="menu-lives"> <!-- Seção que mostra a quantidade de vidas restantes -->
+                <img src="assets/images/player.png" alt="foto do jogador" height="60px"> <!-- Imagem do jogador -->
+                <h2 id="lives">x5</h2> <!-- Exibe a quantidade de vidas restantes -->
+            </div>
+
+        </div>
+
+        <!-- Conteúdo principal da página -->
+        <div class="main-content">
+            <!-- Seção de ranking à esquerda -->
+            <div class="ranking">
+                <h2>Top 3 Scores</h2> <!-- Título da seção de ranking -->
+                <ul id="high-scores"> <!-- Lista não ordenada para exibir os melhores resultados -->
+                    <li>1º: 0</li> <!-- Primeiro lugar -->
+                    <li>2º: 0</li> <!-- Segundo lugar -->
+                    <li>3º: 0</li> <!-- Terceiro lugar -->
+                </ul>
+
+                <!-- Seção para seleção de dificuldade -->
+                <div class="difficulty-selection">
+                    <label for="difficulty">Level:</label> <!-- Rótulo para o seletor de dificuldade -->
+                    <select id="difficulty"> <!-- Seletor para escolher o nível de dificuldade -->
+                        <option value="1300">Easy</option> <!-- Opção de dificuldade fácil -->
+                        <option value="1000" selected>Normal</option> <!-- Opção de dificuldade normal (padrão) -->
+                        <option value="700">Hard</option> <!-- Opção de dificuldade difícil -->
+                    </select>
+                </div>
+
+                <button class="buttons" id="new-game-button">Play Game</button> <!-- Botão para iniciar um novo jogo -->
+                <button id="reset-button" class="buttons">Reset Game</button> <!-- Botão para reiniciar o jogo -->
+            </div>
+
+            <!-- Painel de jogo -->
+            <div class="panel">
+                <div class="panel-row"> <!-- Linha do painel -->
+                    <div class="square enemy" id="1"></div> <!-- Quadrado representando um inimigo -->
+                    <div class="square" id="2"></div> <!-- Quadrado vazio -->
+                    <div class="square" id="3"></div> <!-- Quadrado vazio -->
+                </div>
+
+                <div class="panel-row"> <!-- Linha do painel -->
+                    <div class="square" id="4"></div> <!-- Quadrado vazio -->
+                    <div class="square" id="5"></div> <!-- Quadrado vazio -->
+                    <div class="square" id="6"></div> <!-- Quadrado vazio -->
+                </div>
+
+                <div class="panel-row"> <!-- Linha do painel -->
+                    <div class="square" id="7"></div> <!-- Quadrado vazio -->
+                    <div class="square" id="8"></div> <!-- Quadrado vazio -->
+                    <div class="square" id="9"></div> <!-- Quadrado vazio -->
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/scripts/engine.js"></script> <!-- Link para o arquivo JavaScript que contém a lógica do jogo -->
+</body>
+
+</html>
