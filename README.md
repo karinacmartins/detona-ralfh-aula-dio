@@ -93,7 +93,7 @@ Para perguntas ou feedback, entre em contato:
 
 ## Observações
 
-O jogo está em desenvolvimento contínuo e novas funcionalidades serão adicionadas ao longo do tempo.
+Inclui comentários nas linhas dos códigos para melhorar a legibilidade, facilitando o entendimento, além de auxiliar na manutenção e futuras modificações, garantindo que a lógica e as funcionalidades sejam facilmente compreendidas pois o jogo está em desenvolvimento contínuo e novas funcionalidades serão adicionadas ao longo do tempo.
 
 <br>
 <br>
